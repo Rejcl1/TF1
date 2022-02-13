@@ -192,9 +192,9 @@ resource "oci_database_management_managed_databases_change_database_parameter" "
         #Optional
         password = var.managed_databases_change_database_parameter_credentials_password
         role = var.managed_databases_change_database_parameter_credentials_role
-        user_name = oci_identity_user.sys.name
+        user_name = oci_identity_user.test_user.sys
     }
-    managed_database_id = oci_database_management_managed_database.ocid1.database.oc1.ap-mumbai-1.anrg6ljrr5ywovqao7oxghmgeruaiyb4ljh2ditbmicypt7zffoo66xod7gq
+    managed_database_id = oci_database_management_managed_database.test_managed_database.ocid1.database.oc1.ap-mumbai-1.anrg6ljrr5ywovqao7oxghmgeruaiyb4ljh2ditbmicypt7zffoo66xod7gq
     parameters {
         #Required
         name = var.managed_databases_change_database_parameter_parameters_name
