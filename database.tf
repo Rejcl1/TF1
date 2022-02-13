@@ -185,7 +185,7 @@ resource oci_database_pluggable_database export_pluggable_database_1 {
 }
 
 
-resource "oci_database_management_managed_databases_change_database_parameter" "DB Parameter Change" {
+resource "oci_database_management_managed_databases_change_database_parameter" "test_managed_databases_change_database_parameter" {
     #Required
     credentials {
 
