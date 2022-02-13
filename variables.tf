@@ -7,5 +7,8 @@ variable "private_key_path" { default ="/var/lib/jenkins/.oci/oci_api_key.pem" }
 variable "db_hostname" {default ="db001062"}
 variable "managed_databases_change_database_parameter_parameters_name" {default ="open_cursors"}
 variable "managed_databases_change_database_parameter_parameters_value"{default="1200"}
+variable "managed_databases_change_database_parameter_credentials_password" {default ="DBsggT-#T56t"}
+variable "managed_databases_change_database_parameter_credentials_role" {default ="sysdba"}
+variable "managed_databases_change_database_parameter_scope" {default="BOTH"}
 
  
